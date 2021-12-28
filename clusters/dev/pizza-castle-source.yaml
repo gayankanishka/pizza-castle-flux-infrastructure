@@ -8,4 +8,4 @@ spec:
   interval: 30s
   ref:
     branch: feat/flux-cd
-  url: https://github.com/gayankanishka/pizza-castle-infrastructure
+  url: ssh://git@github.com:gayankanishka/pizza-castle-infrastructure.git
