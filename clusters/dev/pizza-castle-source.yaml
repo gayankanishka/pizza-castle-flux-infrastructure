@@ -9,8 +9,10 @@ spec:
   ref:
     branch: feat/flux-cd
   url: https://github.com/gayankanishka/pizza-castle-infrastructure
-  secretRef:
-    name: https-credentials
+  decryption:
+    provider: sops
+    secretRef:
+      name: https-credentials
 ---
 apiVersion: v1
 kind: Secret
