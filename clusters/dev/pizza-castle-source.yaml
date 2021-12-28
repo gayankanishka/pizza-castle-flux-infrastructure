@@ -9,10 +9,8 @@ spec:
   ref:
     branch: feat/flux-cd
   url: https://github.com/gayankanishka/pizza-castle-infrastructure
-  decryption:
-    provider: sops
-    secretRef:
-      name: https-credentials
+  secretRef:
+    name: https-credentials
 ---
 apiVersion: v1
 kind: Secret
@@ -21,5 +19,5 @@ metadata:
   namespace: flux-system
 type: Opaque
 data:
-  username: gayankanishka
-  password: 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
+  username: Z2F5YW5rYW5pc2hrYQ==
+  password: Z2hwX0E1VUdld0hsWkc4NEZtUXZUYWQ2a3JxZGhCSkFMZDFiYldWag==
