@@ -7,10 +7,10 @@ metadata:
 spec:
   healthChecks:
     - kind: Deployment
-      name: pizza-castle-menu-service-dev
+      name: pizza-castle-menu-service
       namespace: pizza-castle-dev
     - kind: Deployment
-      name: pizza-castle-ordering-service-dev
+      name: pizza-castle-ordering-service
       namespace: pizza-castle-dev
   interval: 1m0s
   path: ./kubernetes/overlays/dev
