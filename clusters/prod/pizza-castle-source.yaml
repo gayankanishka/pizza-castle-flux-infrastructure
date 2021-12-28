@@ -1,0 +1,23 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: pizza-castle-infrastructure
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  url: https://github.com/gayankanishka/pizza-castle-infrastructure
+  secretRef:
+    name: https-credentials
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: https-credentials
+  namespace: flux-system
+type: Opaque
+data:
+  username: Z2F5YW5rYW5pc2hrYQ==
+  password: Z2hwX0E1VUdld0hsWkc4NEZtUXZUYWQ2a3JxZGhCSkFMZDFiYldWag==
