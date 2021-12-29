@@ -1,0 +1,9 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: pizza-castle-web-image
+  namespace: flux-system
+spec:
+  image:
+    - name: kajendranalagaratnam/pizza-castle-web
+      interval: 1m0s
