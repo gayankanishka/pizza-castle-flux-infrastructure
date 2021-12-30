@@ -7,7 +7,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: pizza-castle-flux-infrastructure
+    name: pizza-castle-infrastructure
   git:
     checkout:
       ref:
