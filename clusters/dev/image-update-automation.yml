@@ -1,7 +1,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: pizza-castle-menu-image-automation
+  name: image-update-automation
   namespace: flux-system
 spec:
   interval: 1m0s

@@ -1,11 +1,11 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
-  name: pizza-castle-menu-image-policy
+  name: menu-service-image-policy
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: pizza-castle-menu-image
+    name: menu-service-image-repository
   filterTags:
     pattern: '^dev-[a-fA-F0-9]+-(?P<ts>[1-9][0-9]*)'
     extract: '$ts'
