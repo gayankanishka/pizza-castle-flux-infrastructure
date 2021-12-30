@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: menu-service-image-repository
+  namespace: flux-system
+spec:
+  image: gayankanishka/pizza-castle-menu-service
+  interval: 1m0s
